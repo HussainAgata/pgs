@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+        --primary-color:#02172c;
+        --secondary-color:#1c3fa8;
+        --dark-color:#002248;
+        --light-color:#f4f4f4;
+        --success-color:#5cb85c;
+        --error-color:#633af8;
+}
+
+body{
+    font-family: lato,sans-serif;
+}
+
+span{
+    color: #633af8;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container{
+    padding: 0 80px;
+}
+
+.navbar .container{
+    align-items: center;
+    height: 100%;
+}
+
+.navbar{
+    height: 70px;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li{
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.navbar a{
+    color: #633af8;
+}
+
+.navbar a:hover{
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    border-width: 2px;
+}
+
+.navbar .logo{
+    color: #fff;
+    font-size: 25px;
+    font-family: Magneto;
+}
+
+/*showcase*/
+
+.showcase{
+    background: url(image/desktop-wallpaper-7-blue-light.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 125px 0;
+}
+
+.showcase h3{
+    font-size: 40px;
+    width: 50%;
+}
+
+.showcase .form{
+    justify-self: flex-end;
+    
+}
+
+.showcase input, input:focus{
+    outline: none;
+    display: block;
+    padding: 10px 80px;
+    border: none;
+}
+
+.showcase button{
+    padding: 10px 25px;
+    background-color: #002248;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+.showcase button:hover{
+    transform: scale(0.9);
+}
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 50% 45%;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+/*abt*/
+ .abt{
+    background-color: rgb(243, 169, 71);
+    width: 70%;
+    padding: 40px 0px;
+}
+
+.abt h3{
+    line-height: 4em;
+    font-size: 25px;
+}
+.wrapper2 h3{
+    line-height: 2em;
+    font-size: 20px;
+}
+
+.abt .wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.who{
+    margin-top: 90px;
+}
+.who h3{
+ font-size: 35px;
+}
+.who p{
+    margin-top: 10px;
+}
+
+.dev{
+    margin-top: 30px;
+    
+}
+
+.dev > div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+
+}
+
+.dev h3{
+    padding: 50px 0;
+}
+.devv{
+    justify-self: flex-end;
+    padding: 50px 0;
+    border-bottom: #002248 1px solid;
+
+}
+
+footer .logo{
+
+    
+    font-size: 25px;
+    font-family: Magneto;
+}
+
+footer{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    justify-content: space-around;
+}
+
+@media (max-width:768px){
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0, 0.1);
+    }
+    .showcase h3{
+        text-align: center;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    
+    .wrapper{
+        display: block;
+        text-align: center;
+    }
+
+    .abt .wrapper2{
+        display: block;
+    }
+
+    .abt{
+        text-align: center;
+    }
+    .abt h3{
+        line-height: 1em;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+
+    .wrapper2 h3{
+        
+        font-size: 20px;
+    }
+
+    .form{
+        margin-top: 20px;
+    }
+
+    .abt{
+        background-color: rgb(243, 169, 71);
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .who{
+        text-align: center;
+    }
+    .dev > div{
+        display: block;
+        text-align: center;
+    }
+    .dev h3{
+        padding: 30px 0;
+    }
+    .devv{
+        justify-self: flex-end;
+        padding: 20px 0;
+        border-bottom: #002248 1px solid;
+    
+    }
+    
+
+}
+
+@media (max-width:500px){
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0, 0.1);
+    }
+}
